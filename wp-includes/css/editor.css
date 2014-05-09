@@ -279,10 +279,13 @@ div.mce-path {
     border-color: #bbb;
 }
 
+<<<<<<< HEAD
 .mce-toolbar .mce-btn-group .mce-btn.mce-listbox span {
 	font-size: 13px;
 }
 
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 .mce-panel .mce-btn i.mce-caret {
 	border-top: 6px solid #777;
 	margin-left: 2px;

@@ -1421,7 +1421,11 @@ function retrieve_widgets( $theme_changed = false ) {
 		// time() that sidebars were stored is in $old_sidebars_widgets['time']
 		$_sidebars_widgets = $old_sidebars_widgets['data'];
 
+<<<<<<< HEAD
 		if ( 'customize' !== $theme_changed ) {
+=======
+		if ( 'customize' === $theme_changed ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			remove_theme_mod( 'sidebars_widgets' );
 		}
 
@@ -1506,7 +1510,11 @@ function retrieve_widgets( $theme_changed = false ) {
 	}
 
 	$sidebars_widgets['wp_inactive_widgets'] = array_merge($lost_widgets, (array) $sidebars_widgets['wp_inactive_widgets']);
+<<<<<<< HEAD
 	if ( 'customize' !== $theme_changed ) {
+=======
+	if ( 'customize' === $theme_changed ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		wp_set_sidebars_widgets( $sidebars_widgets );
 	}
 

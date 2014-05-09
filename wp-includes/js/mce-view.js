@@ -451,6 +451,13 @@ window.wp = window.wp || {};
 				firefox = this.ua.is( 'ff' ),
 				className = '.wp-' +  this.shortcode.tag + '-shortcode';
 
+<<<<<<< HEAD
+=======
+			if ( this.player ) {
+				this.unsetPlayer();
+			}
+
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			media = $( node ).find( className );
 
 			if ( ! this.isCompatible( media ) ) {
@@ -483,6 +490,7 @@ window.wp = window.wp || {};
 		 * @returns {string}
 		 */
 		getHtml: function() {
+<<<<<<< HEAD
 			var attrs = this.shortcode.attrs.named;
 			attrs.content = this.shortcode.content;
 
@@ -494,6 +502,22 @@ window.wp = window.wp || {};
 
 		unbind: function() {
 			this.unsetPlayers();
+=======
+			var attrs = _.defaults(
+				this.shortcode.attrs.named,
+				wp.media[ this.shortcode.tag ].defaults
+			);
+			return this.template({ model: attrs });
+		},
+
+		unbind: function() {
+			var self = this;
+			this.pauseAllPlayers();
+			_.each( this.players, function (player) {
+				self.removePlayer( player );
+			} );
+			this.players = [];
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		}
 	});
 	_.extend( wp.mce.media.View.prototype, wp.media.mixin );
@@ -540,10 +564,29 @@ window.wp = window.wp || {};
 		template:  media.template('editor-playlist'),
 
 		initialize: function( options ) {
+<<<<<<< HEAD
 			this.players = [];
 			this.data = {};
 			this.attachments = [];
 			this.shortcode = options.shortcode;
+=======
+			this.data = {};
+			this.attachments = [];
+			this.shortcode = options.shortcode;
+			_.bindAll( this, 'setPlayer' );
+			$(this).on('ready', this.setNode);
+		},
+
+		/**
+		 * Set the element context for the view, and then fetch the playlist's
+		 *   associated attachments.
+		 *
+		 * @param {Event} e
+		 * @param {HTMLElement} node
+		 */
+		setNode: function(e, node) {
+			this.node = node;
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			this.fetch();
 		},
 
@@ -552,7 +595,11 @@ window.wp = window.wp || {};
 		 */
 		fetch: function() {
 			this.attachments = wp.media.playlist.attachments( this.shortcode );
+<<<<<<< HEAD
 			this.dfd = this.attachments.more().done( _.bind( this.render, this ) );
+=======
+			this.attachments.more().done( this.setPlayer );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		},
 
 		/**
@@ -563,13 +610,24 @@ window.wp = window.wp || {};
 		 * @global WPPlaylistView
 		 * @global tinymce.editors
 		 */
+<<<<<<< HEAD
 		render: function() {
 			var html = this.getHtml(), self = this;
+=======
+		setPlayer: function() {
+			var p,
+				html = this.getHtml(),
+				t = this.encodedText,
+				self = this;
+
+			this.unsetPlayer();
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 			_.each( tinymce.editors, function( editor ) {
 				var doc;
 				if ( editor.plugins.wpview ) {
 					doc = editor.getDoc();
+<<<<<<< HEAD
 					$( doc ).find( '[data-wpview-text="' + this.encodedText + '"]' ).each(function (i, elem) {
 						var node = $( elem );
 
@@ -588,6 +646,26 @@ window.wp = window.wp || {};
 					});
 				}
 			}, this );
+=======
+					$( doc ).find( '[data-wpview-text="' + t + '"]' ).each(function(i, elem) {
+						var node = $( elem );
+						node.html( html );
+						self.node = elem;
+					});
+				}
+			}, this );
+
+			if ( ! this.data.tracks ) {
+				return;
+			}
+
+			p = new WPPlaylistView({
+				el: $( self.node ).find( '.wp-playlist' ).get(0),
+				metadata: this.data
+			});
+
+			this.player = p._player;
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		},
 
 		/**
@@ -671,10 +749,13 @@ window.wp = window.wp || {};
 			this.data = options;
 
 			return this.template( options );
+<<<<<<< HEAD
 		},
 
 		unbind: function() {
 			this.unsetPlayers();
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		}
 	});
 	_.extend( wp.mce.media.PlaylistView.prototype, wp.media.mixin );

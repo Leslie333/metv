@@ -38,6 +38,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 	</a>
 </h2>
 
+<<<<<<< HEAD
 <div class="changelog point-releases">
 	<h3><?php echo _n( 'Maintenance Release', 'Maintenance Releases', 1 ); ?></h3>
 	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed %2$s bug.',
@@ -50,6 +51,12 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 	<div class="about-overview">
 	<?php
 	if ( ! is_ssl() && ( $locale = get_locale() ) && 'en_' === substr( $locale, 0, 3 ) ) : ?>
+=======
+<div class="changelog">
+	<div class="about-overview">
+	<?php
+	if ( ( $locale = get_locale() ) && 'en_' === substr( $locale, 0, 3 ) ) : ?>
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		<embed src="//v0.wordpress.com/player.swf?v=1.03" type="application/x-shockwave-flash" width="640" height="360" wmode="direct" seamlesstabbing="true" allowfullscreen="true" allowscriptaccess="always" overstretch="true" flashvars="guid=sAiXhCfV&amp;isDynamicSeeking=true" title=""></embed>
 	<?php else : ?>
 		<img class="about-overview-img" src="//s.w.org/images/core/3.9/overview.png?0" />

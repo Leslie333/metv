@@ -732,7 +732,11 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			$cache[ $args['widget_id'] ] = ob_get_flush();
 			wp_cache_set( 'widget_recent_posts', $cache, 'widget' );
 		} else {
+<<<<<<< HEAD
 			ob_end_flush();
+=======
+			ob_flush();
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		}
 	}
 
@@ -1348,12 +1352,19 @@ class WP_Widget_Tag_Cloud extends WP_Widget {
 		<p>
 			<label for="<?php echo $this->get_field_id('nav_menu'); ?>"><?php _e('Select Menu:'); ?></label>
 			<select id="<?php echo $this->get_field_id('nav_menu'); ?>" name="<?php echo $this->get_field_name('nav_menu'); ?>">
+<<<<<<< HEAD
 				<option value="0"><?php _e( '&mdash; Select &mdash;' ) ?></option>
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		<?php
 			foreach ( $menus as $menu ) {
 				echo '<option value="' . $menu->term_id . '"'
 					. selected( $nav_menu, $menu->term_id, false )
+<<<<<<< HEAD
 					. '>'. esc_html( $menu->name ) . '</option>';
+=======
+					. '>'. $menu->name . '</option>';
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			}
 		?>
 			</select>

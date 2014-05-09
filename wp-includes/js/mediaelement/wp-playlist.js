@@ -7,7 +7,10 @@
 		initialize : function (options) {
 			this.index = 0;
 			this.settings = {};
+<<<<<<< HEAD
 			this.compatMode = $( 'body' ).hasClass( 'wp-admin' ) && $( '#content_ifr' ).length;
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			this.data = options.metadata || $.parseJSON( this.$('script').html() );
 			this.playerNode = this.$( this.data.type );
 
@@ -27,9 +30,13 @@
 				this.renderTracks();
 			}
 
+<<<<<<< HEAD
 			if ( this.isCompatibleSrc() ) {
 				this.playerNode.attr( 'src', this.current.get( 'src' ) );
 			}
+=======
+			this.playerNode.attr( 'src', this.current.get( 'src' ) );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 			_.bindAll( this, 'bindPlayer', 'bindResetPlayer', 'setPlayer', 'ended', 'clickTrack' );
 
@@ -41,12 +48,18 @@
 		},
 
 		bindPlayer : function (mejs) {
+<<<<<<< HEAD
 			this.mejs = mejs;
 			this.mejs.addEventListener( 'ended', this.ended );
+=======
+			this.player = mejs;
+			this.player.addEventListener( 'ended', this.ended );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		},
 
 		bindResetPlayer : function (mejs) {
 			this.bindPlayer( mejs );
+<<<<<<< HEAD
 			if ( this.isCompatibleSrc() ) {
 				this.playCurrentSrc();
 			}
@@ -86,10 +99,28 @@
 			 * This is also our bridge to the outside world
 			 */
 			this.player = new MediaElementPlayer( this.playerNode.get(0), this.settings );
+=======
+			this.playCurrentSrc();
+		},
+
+		setPlayer: function () {
+			if ( this._player ) {
+				this._player.pause();
+				this._player.remove();
+				this.playerNode = this.$( this.data.type );
+				this.playerNode.attr( 'src', this.current.get( 'src' ) );
+				this.settings.success = this.bindResetPlayer;
+			}
+			/**
+			 * This is also our bridge to the outside world
+			 */
+			this._player = new MediaElementPlayer( this.playerNode.get(0), this.settings );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		},
 
 		playCurrentSrc : function () {
 			this.renderCurrent();
+<<<<<<< HEAD
 			this.mejs.setSrc( this.playerNode.attr( 'src' ) );
 			this.mejs.load();
 			this.mejs.play();
@@ -99,6 +130,17 @@
 			var dimensions, defaultImage = 'wp-includes/images/media/video.png';
 			if ( 'video' === this.data.type ) {
 				if ( this.data.images && this.current.get( 'image' ) && -1 === this.current.get( 'image' ).src.indexOf( defaultImage ) ) {
+=======
+			this.player.setSrc( this.playerNode.attr( 'src' ) );
+			this.player.load();
+			this.player.play();
+		},
+
+		renderCurrent : function () {
+			var dimensions;
+			if ( 'video' === this.data.type ) {
+				if ( this.data.images && this.current.get( 'image' ) ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 					this.playerNode.attr( 'poster', this.current.get( 'image' ).src );
 				}
 				dimensions = this.current.get( 'dimensions' ).resized;
@@ -161,6 +203,7 @@
 		},
 
 		loadCurrent : function () {
+<<<<<<< HEAD
 			var last = this.playerNode.attr( 'src' ) && this.playerNode.attr( 'src' ).split('.').pop(),
 				current = this.current.get( 'src' ).split('.').pop();
 
@@ -169,6 +212,16 @@
 			if ( last !== current ) {
 				this.setPlayer( true );
 			} else if ( this.isCompatibleSrc() ) {
+=======
+			var last = this.playerNode.attr( 'src' ).split('.').pop(),
+				current = this.current.get( 'src' ).split('.').pop();
+
+			this.player.pause();
+
+			if ( last !== current ) {
+				this.setPlayer();
+			} else {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 				this.playerNode.attr( 'src', this.current.get( 'src' ) );
 				this.playCurrentSrc();
 			}

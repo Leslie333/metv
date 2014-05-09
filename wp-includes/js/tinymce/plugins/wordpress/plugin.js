@@ -63,7 +63,11 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 
 	// Hide the toolbars after loading
 	editor.on( 'PostRender', function() {
+<<<<<<< HEAD
 		if ( editor.getParam( 'wordpress_adv_hidden', true ) && getUserSetting( 'hidetb', '0' ) === '0' ) {
+=======
+		if ( getUserSetting('hidetb', '0') === '0' ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			toggleToolbars( 'hide' );
 		}
 	});
@@ -317,7 +321,11 @@ tinymce.PluginManager.add( 'wordpress', function( editor ) {
 			dom.bind( doc, 'dragstart dragend dragover drop', function( event ) {
 				if ( typeof window.jQuery !== 'undefined' ) {
 					// Trigger the jQuery handlers.
+<<<<<<< HEAD
 					window.jQuery( document ).trigger( new window.jQuery.Event( event ) );
+=======
+					window.jQuery( document ).triggerHandler( event.type );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 				}
 			});
 		}

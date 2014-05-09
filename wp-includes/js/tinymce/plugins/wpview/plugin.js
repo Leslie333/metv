@@ -332,6 +332,7 @@ tinymce.PluginManager.add( 'wpview', function( editor ) {
 		tinymce.each( dom.select( 'div[data-wpview-text]', event.node ), function( node ) {
 			// Empty the wrap node
 			if ( 'textContent' in node ) {
+<<<<<<< HEAD
 				node.textContent = '\u00a0';
 			} else {
 				node.innerText = '\u00a0';
@@ -350,6 +351,19 @@ tinymce.PluginManager.add( 'wpview', function( editor ) {
 		}
 	});
 
+=======
+				node.textContent = '';
+			} else {
+				node.innerText = '';
+			}
+
+			// This makes all views into block tags (as we use <div>).
+			// Can use 'PostProcess' and a regex instead.
+			dom.replace( dom.create( 'p', null, window.decodeURIComponent( dom.getAttrib( node, 'data-wpview-text' ) ) ), node );
+		});
+    });
+
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	editor.on( 'keydown', function( event ) {
 		var keyCode = event.keyCode,
 			body = editor.getBody(),

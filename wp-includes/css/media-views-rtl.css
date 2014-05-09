@@ -1781,8 +1781,12 @@
 	margin-top: 24px;
 }
 
+<<<<<<< HEAD
 .media-embed .setting input.hidden,
 .media-embed .setting textarea.hidden {
+=======
+.media-embed .setting input.hidden {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	display: none;
 }
 

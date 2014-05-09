@@ -15,10 +15,15 @@ tinymce.PluginManager.add( 'wplink', function( editor ) {
 	editor.addShortcut( 'ctrl+k', '', 'WP_Link' );
 
 	function setState( button, node ) {
+<<<<<<< HEAD
 		var parent = editor.dom.getParent( node, 'a' );
 
 		button.disabled( ( editor.selection.isCollapsed() && ! parent ) || ( parent && ! parent.href ) );
 		button.active( parent && parent.href );
+=======
+		button.disabled( editor.selection.isCollapsed() && node.nodeName !== 'A' );
+		button.active( node.nodeName === 'A' && ! node.name );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	}
 
 	editor.addButton( 'link', {

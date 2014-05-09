@@ -1353,8 +1353,11 @@ function wp_playlist_shortcode( $attr ) {
 		echo (int) $theme_width;
 	?>"<?php if ( 'video' === $safe_type ):
 		echo ' height="', (int) $theme_height, '"';
+<<<<<<< HEAD
 	else:
 		echo ' style="visibility: hidden"';
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	endif; ?>></<?php echo $safe_type ?>>
 	<div class="wp-playlist-next"></div>
 	<div class="wp-playlist-prev"></div>
@@ -1557,7 +1560,11 @@ function wp_audio_shortcode( $attr, $content = '' ) {
 		'loop'     => $loop,
 		'autoplay' => $autoplay,
 		'preload'  => $preload,
+<<<<<<< HEAD
 		'style'    => 'width: 100%; visibility: hidden;',
+=======
+		'style'    => 'width: 100%',
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	);
 
 	// These ones should just be omitted altogether if they are blank
@@ -2656,7 +2663,11 @@ function wp_enqueue_media( $args = array() ) {
 	if ( did_action( 'wp_enqueue_media' ) )
 		return;
 
+<<<<<<< HEAD
 	global $content_width, $wpdb;
+=======
+	global $content_width;
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 	$defaults = array(
 		'post' => null,
@@ -2695,6 +2706,7 @@ function wp_enqueue_media( $args = array() ) {
 		}
 	}
 
+<<<<<<< HEAD
 	$has_audio = $wpdb->get_var( "
 		SELECT ID
 		FROM $wpdb->posts
@@ -2709,6 +2721,17 @@ function wp_enqueue_media( $args = array() ) {
 		AND post_mime_type LIKE 'video%'
 		LIMIT 1
 	" );
+=======
+	$audio = $video = 0;
+	$counts = (array) wp_count_attachments();
+	foreach ( $counts as $mime => $total ) {
+		if ( 0 === strpos( $mime, 'audio/' ) ) {
+			$audio += (int) $total;
+		} elseif ( 0 === strpos( $mime, 'video/' ) ) {
+			$video += (int) $total;
+		}
+	}
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 	$settings = array(
 		'tabs'      => $tabs,
@@ -2724,8 +2747,13 @@ function wp_enqueue_media( $args = array() ) {
 		),
 		'defaultProps' => $props,
 		'attachmentCounts' => array(
+<<<<<<< HEAD
 			'audio' => (int) $has_audio,
 			'video' => (int) $has_video,
+=======
+			'audio' => $audio,
+			'video' => $video
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		),
 		'embedExts'    => $exts,
 		'embedMimes'   => $ext_mimes,
@@ -2836,7 +2864,11 @@ function wp_enqueue_media( $args = array() ) {
 		'videoReplaceTitle'     => __( 'Replace Video' ),
 		'videoAddSourceTitle'   => __( 'Add Video Source' ),
 		'videoDetailsCancel'    => __( 'Cancel Edit' ),
+<<<<<<< HEAD
 		'videoSelectPosterImageTitle' => __( 'Select Poster Image' ),
+=======
+		'videoSelectPosterImageTitle' => _( 'Select Poster Image' ),
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		'videoAddTrackTitle'	=> __( 'Add Subtitles' ),
 
  		// Playlist

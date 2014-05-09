@@ -70,7 +70,11 @@
 		},
 
 		setButtons: function() {
+<<<<<<< HEAD
 			var elements = $('#customize-control-header_image .actions .remove');
+=======
+			var elements = $('.actions .remove');
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			if (this.model.get('choice')) {
 				elements.show();
 			} else {

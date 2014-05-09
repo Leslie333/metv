@@ -2,7 +2,11 @@
 # This file is distributed under the same license as the Development package.
 msgid ""
 msgstr ""
+<<<<<<< HEAD
 "PO-Revision-Date: 2014-05-08 10:38:43+0000\n"
+=======
+"PO-Revision-Date: 2014-04-16 15:18:34+0000\n"
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -99,7 +103,11 @@ msgstr "Schriftgröße"
 msgid "Split table cell"
 msgstr "Tabellen-Zelle teilen"
 
+<<<<<<< HEAD
 #: wp-includes/media-template.php:210 wp-includes/media.php:2818
+=======
+#: wp-includes/media-template.php:210 wp-includes/media.php:2817
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Suggested image dimensions:"
 msgstr "Empfohlene Bild-Abmessungen:"
 
@@ -119,6 +127,7 @@ msgstr "Bildtitel-Attribut"
 msgid "Image CSS Class"
 msgstr "Bild-CSS-Klasse"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:1422
 msgid "Artist"
 msgstr "Künstler"
@@ -136,10 +145,30 @@ msgid "Year"
 msgstr "Jahr"
 
 #: wp-includes/media.php:1429
+=======
+#: wp-includes/media.php:1421
+msgid "Artist"
+msgstr "Künstler"
+
+#: wp-includes/media.php:1422
+msgid "Album"
+msgstr "Album"
+
+#: wp-includes/media.php:1426
+msgid "Genre"
+msgstr "Genre"
+
+#: wp-includes/media.php:1427
+msgid "Year"
+msgstr "Jahr"
+
+#: wp-includes/media.php:1428
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgctxt "video or audio"
 msgid "Length"
 msgstr "Länge"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2819
 msgid "There has been an error cropping your image."
 msgstr "Beim Zuschneiden Deines Bildes ist ein Fehler aufgetaucht."
@@ -165,6 +194,33 @@ msgid "Add to audio playlist"
 msgstr "Zu Audio-Wiedergabeliste hinzufügen"
 
 #: wp-includes/media.php:2843
+=======
+#: wp-includes/media.php:2818
+msgid "There has been an error cropping your image."
+msgstr "Beim Zuschneiden Deines Bildes ist ein Fehler aufgetaucht."
+
+#: wp-includes/media.php:2837
+msgid "Edit Audio Playlist"
+msgstr "Audio-Wiedergabeliste bearbeiten"
+
+#: wp-includes/media.php:2838
+msgid "&#8592; Cancel Audio Playlist"
+msgstr "&#8592; Audio-Wiedergabeliste abbrechen"
+
+#: wp-includes/media.php:2839
+msgid "Insert audio playlist"
+msgstr "Audio-Playliste einfügen"
+
+#: wp-includes/media.php:2840
+msgid "Update audio playlist"
+msgstr "Audio-Playliste aktualisieren"
+
+#: wp-includes/media.php:2841
+msgid "Add to audio playlist"
+msgstr "Zu Audio-Wiedergabeliste hinzufügen"
+
+#: wp-includes/media.php:2842
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Add to Audio Playlist"
 msgstr "Zu Audio-Wiedergabeliste hinzufügen"
 
@@ -227,7 +283,11 @@ msgstr "Automatisch"
 msgid "Move to another area&hellip;"
 msgstr "In einen anderen Bereich verschieben&#160;&hellip;"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2817
+=======
+#: wp-includes/media.php:2816
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Cropping&hellip;"
 msgstr "Zuschneiden&#160;&hellip;"
 
@@ -482,7 +542,11 @@ msgstr "Format"
 msgid "Add alternate sources for maximum HTML5 playback:"
 msgstr "Füge alternative Quellen für maximale HTML5-Wiedergabe hinzu:"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2806
+=======
+#: wp-includes/media.php:2805
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Image Details"
 msgstr "Bild-Details"
 
@@ -491,7 +555,11 @@ msgstr "Bild-Details"
 msgid "An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href=\"https://wordpress.org/support/\">support forums</a>."
 msgstr "Ein unerwarteter Fehler ist aufgetreten. Das könnte an WordPress.org oder der Konfiguration dieses Servers liegen. Solltest du weiterhin Probleme haben, wende dich an das <a href=\"https://wordpress.org/support/\">Support Forum (en.)</a>."
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2763
+=======
+#: wp-includes/media.php:2762
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Back"
 msgstr "Zurück"
 
@@ -548,6 +616,7 @@ msgstr "Poster-Bild"
 msgid "There are no associated subtitles."
 msgstr "Es gibt keine zugehörigen Untertitel."
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2779
 msgid "Create a new playlist"
 msgstr "Erstelle eine neue Wiedergabeliste"
@@ -654,6 +723,114 @@ msgid "Add to video playlist"
 msgstr "Zur Video-Wiedergabeliste hinzufügen"
 
 #: wp-includes/media.php:2853
+=======
+#: wp-includes/media.php:2778
+msgid "Create a new playlist"
+msgstr "Erstelle eine neue Wiedergabeliste"
+
+#: wp-includes/media.php:2779
+msgid "Create a new video playlist"
+msgstr "Erstelle eine neue Video-Wiedergabeliste"
+
+#: wp-includes/media.php:2806
+msgid "Replace Image"
+msgstr "Bild ersetzen"
+
+#: wp-includes/media.php:2807 wp-includes/media.php:2824
+#: wp-includes/media.php:2830
+msgid "Cancel Edit"
+msgstr "Bearbeiten abbrechen"
+
+#: wp-includes/media.php:2811
+msgid "Choose Image"
+msgstr "Bild wählen"
+
+#: wp-includes/media.php:2812
+msgid "Select and Crop"
+msgstr "Auswählen und zuschneiden"
+
+#: wp-includes/media.php:2813
+msgid "Skip Cropping"
+msgstr "Zuschneiden überspringen"
+
+#: wp-includes/media.php:2814
+msgid "Crop Image"
+msgstr "Bild zuschneiden"
+
+#: wp-includes/media.php:2815
+msgid "Crop your image"
+msgstr "Schneide dein Bild zu"
+
+#: wp-includes/media.php:2821
+msgid "Audio Details"
+msgstr "Audio-Details"
+
+#: wp-includes/media.php:2822
+msgid "Replace Audio"
+msgstr "Audio ersetzen"
+
+#: wp-includes/media.php:2823
+msgid "Add Audio Source"
+msgstr "Audio-Quelle hinzufügen"
+
+#: wp-includes/media.php:2827
+msgid "Video Details"
+msgstr "Video-Details"
+
+#: wp-includes/media.php:2828
+msgid "Replace Video"
+msgstr "Video ersetzen"
+
+#: wp-includes/media.php:2829
+msgid "Add Video Source"
+msgstr "Video-Quelle hinzufügen"
+
+#: wp-includes/media.php:2831
+msgid "Select Poster Image"
+msgstr "Poster-Bild auswählen"
+
+#: wp-includes/media.php:2832
+msgid "Add Subtitles"
+msgstr "Untertitel hinzufügen"
+
+#: wp-includes/media.php:2835
+msgid "Drag and drop to reorder tracks."
+msgstr "Drag-and-Drop zum Umsortieren der Titel."
+
+#: wp-includes/media.php:2836
+msgid "Create Audio Playlist"
+msgstr "Audio-Wiedergabeliste erstellen"
+
+#: wp-includes/media.php:2845
+msgid "Drag and drop to reorder videos."
+msgstr "Drag-and-Drop zum Umsortieren der Videos."
+
+#: wp-includes/media.php:2846
+msgid "Create Video Playlist"
+msgstr "Video-Wiedergabeliste erstellen"
+
+#: wp-includes/media.php:2847
+msgid "Edit Video Playlist"
+msgstr "Bearbeite Video-Wiedergabeliste"
+
+#: wp-includes/media.php:2848
+msgid "&#8592; Cancel Video Playlist"
+msgstr "&#8592; Video-Wiedergabeliste abbrechen"
+
+#: wp-includes/media.php:2849
+msgid "Insert video playlist"
+msgstr "Video-Wiedergabeliste einfügen"
+
+#: wp-includes/media.php:2850
+msgid "Update video playlist"
+msgstr "Video-Wiedergabeliste aktualisieren"
+
+#: wp-includes/media.php:2851
+msgid "Add to video playlist"
+msgstr "Zur Video-Wiedergabeliste hinzufügen"
+
+#: wp-includes/media.php:2852
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Add to Video Playlist"
 msgstr "Zur Video-Wiedergabeliste hinzufügen"
 
@@ -914,7 +1091,11 @@ msgstr "Seitenumbruch"
 msgid "Paste as text"
 msgstr "Als Text einfügen"
 
+<<<<<<< HEAD
 #: wp-includes/media-template.php:657 wp-includes/media.php:2761
+=======
+#: wp-includes/media-template.php:657 wp-includes/media.php:2760
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Replace"
 msgstr "Ersetzen"
 
@@ -1364,6 +1545,7 @@ msgstr "Zufällige Sortierung"
 
 #: wp-includes/media-template.php:273
 msgid "Caption this image&hellip;"
+<<<<<<< HEAD
 msgstr "Beschreibe dieses Bild&#160;&hellip; "
 
 #: wp-includes/media.php:2768
@@ -1375,6 +1557,19 @@ msgid "Insert from URL"
 msgstr "Von URL einfügen"
 
 #: wp-includes/media.php:2792
+=======
+msgstr "Beschreibe dieses Bild"
+
+#: wp-includes/media.php:2767
+msgid "%d selected"
+msgstr "%d ausgewählt"
+
+#: wp-includes/media.php:2788
+msgid "Insert from URL"
+msgstr "Von URL einfügen"
+
+#: wp-includes/media.php:2791
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Set Featured Image"
 msgstr "Beitragsbild festlegen"
 
@@ -1384,6 +1579,7 @@ msgid "Random"
 msgstr "Zufällig"
 
 #: wp-includes/media-template.php:1005 wp-includes/media-template.php:1049
+<<<<<<< HEAD
 #: wp-includes/media.php:2783
 msgid "No items found."
 msgstr "Keine Elemente gefunden."
@@ -1397,6 +1593,21 @@ msgid "Reverse order"
 msgstr "Sortierung umkehren"
 
 #: wp-includes/media.php:2793
+=======
+#: wp-includes/media.php:2782
+msgid "No items found."
+msgstr "Keine Elemente gefunden."
+
+#: wp-includes/media.php:2801
+msgid "Add to Gallery"
+msgstr "Zur Galerie hinzufügen"
+
+#: wp-includes/media.php:2802
+msgid "Reverse order"
+msgstr "Sortierung umkehren"
+
+#: wp-includes/media.php:2792
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Set featured image"
 msgstr "Beitragsbild festlegen"
 
@@ -1409,7 +1620,11 @@ msgstr "Abwählen"
 msgid "Sorry, that file cannot be edited."
 msgstr "Diese Datei kann leider nicht bearbeitet werden."
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2786
+=======
+#: wp-includes/media.php:2785
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid ""
 "You are about to permanently delete this item.\n"
 "  'Cancel' to stop, 'OK' to delete."
@@ -1437,7 +1652,11 @@ msgstr "Fehler verwerfen"
 msgid "Error"
 msgstr "Fehler"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2344
+=======
+#: wp-includes/media.php:2343
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "No editor could be selected."
 msgstr "Es konnte kein Editor ausgewählt werden."
 
@@ -1479,6 +1698,7 @@ msgid_plural "Video <span class=\"count\">(%s)</span>"
 msgstr[0] "Video <span class=\"count\">(%s)</span>"
 msgstr[1] "Videos <span class=\"count\">(%s)</span>"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2784
 msgid "Insert into page"
 msgstr "In die Seite einfügen"
@@ -1492,6 +1712,21 @@ msgid "All media items"
 msgstr "Alle Medien"
 
 #: wp-includes/media.php:2785
+=======
+#: wp-includes/media.php:2783
+msgid "Insert into page"
+msgstr "In die Seite einfügen"
+
+#: wp-includes/media.php:2784
+msgid "Uploaded to this page"
+msgstr "Zu dieser Seite hochgeladen"
+
+#: wp-includes/media.php:2781
+msgid "All media items"
+msgstr "Alle Medien"
+
+#: wp-includes/media.php:2784
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Uploaded to this post"
 msgstr "Zu diesem Beitrag hochgeladen"
 
@@ -1499,7 +1734,11 @@ msgstr "Zu diesem Beitrag hochgeladen"
 msgid "Audio"
 msgstr "Audio"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2781
+=======
+#: wp-includes/media.php:2780
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "&#8592; Return to library"
 msgstr "&#8592; Zurück zur Bibliothek"
 
@@ -1520,12 +1759,20 @@ msgstr "Alternativtext"
 msgid "Columns"
 msgstr "Spalten"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2769
+=======
+#: wp-includes/media.php:2768
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Drag and drop to reorder images."
 msgstr "Drag-and-Drop zum Umsortieren der Bilder."
 
 #: wp-includes/media-template.php:464 wp-includes/media-template.php:710
+<<<<<<< HEAD
 #: wp-includes/media.php:2547
+=======
+#: wp-includes/media.php:2546
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Large"
 msgstr "Groß"
 
@@ -1537,11 +1784,19 @@ msgstr "Dateianhang Anzeigeneinstellung"
 msgid "Gallery Settings"
 msgstr "Galerie-Einstellungen"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2773
 msgid "Upload Images"
 msgstr "Bilder hochladen"
 
 #: wp-includes/media.php:2798
+=======
+#: wp-includes/media.php:2772
+msgid "Upload Images"
+msgstr "Bilder hochladen"
+
+#: wp-includes/media.php:2797
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "&#8592; Cancel Gallery"
 msgstr "&#8592; Galerie abbrechen"
 
@@ -1553,11 +1808,19 @@ msgstr "WordPress &rsaquo; Erfolg"
 msgid "Drop files anywhere to upload"
 msgstr "Drag-and-Drop die Dateien hierher für den Upload"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2772
 msgid "Upload Files"
 msgstr "Dateien hochladen"
 
 #: wp-includes/media.php:2799
+=======
+#: wp-includes/media.php:2771
+msgid "Upload Files"
+msgstr "Dateien hochladen"
+
+#: wp-includes/media.php:2798
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Insert gallery"
 msgstr "Galerie einfügen"
 
@@ -1565,11 +1828,19 @@ msgstr "Galerie einfügen"
 msgid "Drop files to upload"
 msgstr "Dateien für den Upload bereitstellen"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2776
 msgid "Media Library"
 msgstr "Mediathek"
 
 #: wp-includes/media.php:2796
+=======
+#: wp-includes/media.php:2775
+msgid "Media Library"
+msgstr "Mediathek"
+
+#: wp-includes/media.php:2795
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Create Gallery"
 msgstr "Galerie erstellen"
 
@@ -1650,7 +1921,11 @@ msgstr "Beschreibe diese Audiodatei&#160;&hellip;"
 msgid "Describe this media file&hellip;"
 msgstr "Beschreibe diese Mediendatei&#160;&hellip;"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2800
+=======
+#: wp-includes/media.php:2799
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Update gallery"
 msgstr "Galerie aktualisieren"
 
@@ -1722,6 +1997,7 @@ msgstr "Zeige Anhangseite"
 msgid "Whoops, the provided date is invalid."
 msgstr "Ups, das eingegebene Datum ist ungültig."
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2777
 msgid "Insert Media"
 msgstr "Medien hinzufügen"
@@ -1735,6 +2011,21 @@ msgid "Insert into post"
 msgstr "In den Beitrag einfügen"
 
 #: wp-includes/media.php:2801
+=======
+#: wp-includes/media.php:2776
+msgid "Insert Media"
+msgstr "Medien hinzufügen"
+
+#: wp-includes/media.php:2777
+msgid "Create a new gallery"
+msgstr "Erstelle eine neue Galerie"
+
+#: wp-includes/media.php:2783
+msgid "Insert into post"
+msgstr "In den Beitrag einfügen"
+
+#: wp-includes/media.php:2800
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Add to gallery"
 msgstr "Zur Galerie hinzufügen"
 
@@ -2040,7 +2331,11 @@ msgstr "Hochladen"
 #: wp-includes/media-template.php:261 wp-includes/media-template.php:816
 #: wp-includes/media-template.php:830 wp-includes/media-template.php:901
 #: wp-includes/media-template.php:913 wp-includes/media-template.php:934
+<<<<<<< HEAD
 #: wp-includes/media-template.php:967 wp-includes/media.php:2762
+=======
+#: wp-includes/media-template.php:967 wp-includes/media.php:2761
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -2499,7 +2794,11 @@ msgstr "E-Mail"
 msgid "Users"
 msgstr "Benutzer"
 
+<<<<<<< HEAD
 #: wp-includes/class-wp-editor.php:1202 wp-includes/media.php:2760
+=======
+#: wp-includes/class-wp-editor.php:1202 wp-includes/media.php:2759
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 #: wp-includes/script-loader.php:362 wp-includes/script-loader.php:452
 msgid "Update"
 msgstr "Aktualisieren"
@@ -2520,7 +2819,11 @@ msgstr "Name"
 
 #: wp-includes/general-template.php:405 wp-login.php:694 wp-login.php:860
 msgid "Username"
+<<<<<<< HEAD
 msgstr "Benutzername"
+=======
+msgstr "Benutzename"
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 #: wp-includes/admin-bar.php:315 wp-includes/admin-bar.php:362
 #: wp-includes/admin-bar.php:418 wp-includes/deprecated.php:2835
@@ -2905,7 +3208,11 @@ msgstr "Whois: http://whois.arin.net/rest/ip/%s"
 
 #: wp-includes/class-wp-editor.php:1405 wp-includes/media-template.php:773
 msgid "Open link in a new window/tab"
+<<<<<<< HEAD
 msgstr "Link in neuem Fenster/Tab öffnen"
+=======
+msgstr "Link in neuem Fenster oder Tab öffnen"
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 #: wp-includes/class-wp-editor.php:1424
 msgid "No search term specified. Showing recent items."
@@ -4914,7 +5221,11 @@ msgstr "Stumm"
 msgid "Insert More Tag"
 msgstr "\"Weiterlesen\"-Link einfügen"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2797
+=======
+#: wp-includes/media.php:2796
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Edit Gallery"
 msgstr "Galerie bearbeiten"
 
@@ -6204,7 +6515,11 @@ msgstr "Hinterlasse einen Kommentar zu %s"
 msgid "Author"
 msgstr "Autor"
 
+<<<<<<< HEAD
 #: wp-includes/class-wp-editor.php:1399 wp-includes/media.php:2755
+=======
+#: wp-includes/class-wp-editor.php:1399 wp-includes/media.php:2754
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "URL"
 msgstr "URL"
 
@@ -6362,7 +6677,11 @@ msgid "Recent Comments"
 msgstr "Letzte Kommentare"
 
 #: wp-includes/class-wp-editor.php:802 wp-includes/class-wp-editor.php:1437
+<<<<<<< HEAD
 #: wp-includes/media.php:2759 wp-includes/script-loader.php:391
+=======
+#: wp-includes/media.php:2758 wp-includes/script-loader.php:391
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 #: wp-includes/script-loader.php:442
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -6430,7 +6749,11 @@ msgid "Redo"
 msgstr "Wiederholen"
 
 #: wp-includes/media-template.php:462 wp-includes/media-template.php:708
+<<<<<<< HEAD
 #: wp-includes/media.php:2545
+=======
+#: wp-includes/media.php:2544
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Thumbnail"
 msgstr "Miniaturbild"
 
@@ -6446,7 +6769,11 @@ msgstr "Die GD Image Library ist nicht installiert."
 msgid "File &#8220;%s&#8221; is not an image."
 msgstr "Die Datei &#8220;%s&#8221; ist kein Bild."
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2756
+=======
+#: wp-includes/media.php:2755
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Add Media"
 msgstr "Dateien hinzufügen"
 
@@ -6473,12 +6800,20 @@ msgid "Right"
 msgstr "Rechts"
 
 #: wp-includes/media-template.php:463 wp-includes/media-template.php:709
+<<<<<<< HEAD
 #: wp-includes/media.php:2546
+=======
+#: wp-includes/media.php:2545
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Medium"
 msgstr "Mittelgroß"
 
 #: wp-includes/media-template.php:465 wp-includes/media-template.php:711
+<<<<<<< HEAD
 #: wp-includes/media.php:2548
+=======
+#: wp-includes/media.php:2547
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Full Size"
 msgstr "Vollständige Größe"
 
@@ -6495,7 +6830,11 @@ msgstr "Ausrichtung"
 msgid "Caption"
 msgstr "Beschriftung"
 
+<<<<<<< HEAD
 #: wp-includes/media-template.php:316 wp-includes/media.php:2809
+=======
+#: wp-includes/media-template.php:316 wp-includes/media.php:2808
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Edit Image"
 msgstr "Bild bearbeiten"
 
@@ -6541,7 +6880,11 @@ msgid "Dismiss"
 msgstr "Verwerfen"
 
 #: wp-includes/admin-bar.php:716 wp-includes/class-wp-editor.php:1412
+<<<<<<< HEAD
 #: wp-includes/media.php:2757
+=======
+#: wp-includes/media.php:2756
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Search"
 msgstr "Suchen"
 
@@ -6580,7 +6923,11 @@ msgstr "Seiten"
 msgid "Close"
 msgstr "Schließen"
 
+<<<<<<< HEAD
 #: wp-includes/media.php:2758
+=======
+#: wp-includes/media.php:2757
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 msgid "Select"
 msgstr "- Wähle -"
 

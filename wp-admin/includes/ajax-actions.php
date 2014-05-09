@@ -2233,7 +2233,11 @@ function wp_ajax_query_themes() {
 		wp_send_json_error();
 	}
 
+<<<<<<< HEAD
 	$update_php = network_admin_url( 'update.php?action=install-theme' );
+=======
+	$update_php = self_admin_url( 'update.php?action=install-theme' );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	foreach ( $api->themes as &$theme ) {
 		$theme->install_url = add_query_arg( array(
 			'theme'    => $theme->slug,

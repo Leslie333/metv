@@ -113,10 +113,13 @@
 				return false;
 			}
 
+<<<<<<< HEAD
 			if (this.get('imageWidth') <= this.get('themeWidth')) {
 				return false;
 			}
 
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			return true;
 		}
 	});

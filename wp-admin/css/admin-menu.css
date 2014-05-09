@@ -500,7 +500,11 @@ ul#adminmenu > li.current > a.current:after {
 }
 
 #adminmenu .awaiting-mod,
+<<<<<<< HEAD
 #adminmenu .update-plugins,
+=======
+#adminmenu span.update-plugins,
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 #sidemenu li a span.update-plugins {
 	display: inline-block;
 	background-color: #d54e21;

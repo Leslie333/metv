@@ -2175,7 +2175,11 @@
 					library:        options.selection,
 					editing:        options.editing,
 					menu:           'video-playlist',
+<<<<<<< HEAD
 					dragInfoText:   l10n.videoPlaylistDragInfo,
+=======
+					dragInfoText:   l10n.playlistDragInfo,
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 					dragInfo:       false
 				}),
 
@@ -3270,7 +3274,10 @@
 		localDrag: false,
 		overContainer: false,
 		overDropzone: false,
+<<<<<<< HEAD
 		draggingFile: null,
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 		initialize: function() {
 			var self = this;
@@ -3310,6 +3317,7 @@
 			return supports;
 		},
 
+<<<<<<< HEAD
 		isDraggingFile: function( event ) {
 			if ( this.draggingFile !== null ) {
 				return this.draggingFile;
@@ -3325,6 +3333,8 @@
 			return this.draggingFile;
 		},
 
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 		refresh: function( e ) {
 			var dropzone_id;
 			for ( dropzone_id in this.dropzones ) {
@@ -3336,10 +3346,13 @@
 				$( e.target ).closest( '.uploader-editor' ).toggleClass( 'droppable', this.overDropzone );
 			}
 
+<<<<<<< HEAD
 			if ( ! this.overContainer && ! this.overDropzone ) {
 				this.draggingFile = null;
 			}
 
+=======
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			return this;
 		},
 
@@ -3403,8 +3416,13 @@
 			return this;
 		},
 
+<<<<<<< HEAD
 		containerDragover: function( event ) {
 			if ( this.localDrag || ! this.isDraggingFile( event ) ) {
+=======
+		containerDragover: function() {
+			if ( this.localDrag ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 				return;
 			}
 
@@ -3419,13 +3437,22 @@
 			_.delay( _.bind( this.refresh, this ), 50 );
 		},
 
+<<<<<<< HEAD
 		dropzoneDragover: function( event ) {
 			if ( this.localDrag || ! this.isDraggingFile( event ) ) {
+=======
+		dropzoneDragover: function( e ) {
+			if ( this.localDrag ) {
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 				return;
 			}
 
 			this.overDropzone = true;
+<<<<<<< HEAD
 			this.refresh( event );
+=======
+			this.refresh( e );
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			return false;
 		},
 

@@ -309,8 +309,13 @@
 
 	api.HeaderControl = api.Control.extend({
 		ready: function() {
+<<<<<<< HEAD
 			this.btnRemove        = $('#customize-control-header_image .actions .remove');
 			this.btnNew           = $('#customize-control-header_image .actions .new');
+=======
+			this.btnRemove        = $('.actions .remove');
+			this.btnNew           = $('.actions .new');
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 			_.bindAll(this, 'openMedia', 'removeImage');
 

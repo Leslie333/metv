@@ -16,8 +16,12 @@
 function wp_underscore_audio_template() {
 	$audio_types = wp_get_audio_extensions();
 ?>
+<<<<<<< HEAD
 <audio style="visibility: hidden"
 	controls
+=======
+<audio controls
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 	class="wp-audio-shortcode"
 	width="{{ _.isUndefined( data.model.width ) ? 400 : data.model.width }}"
 	preload="{{ _.isUndefined( data.model.preload ) ? 'none' : data.model.preload }}"
@@ -854,6 +858,7 @@ function wp_print_media_templates() {
 				</div>
 
 				<label class="setting checkbox-setting">
+<<<<<<< HEAD
 					<input type="checkbox" data-setting="autoplay" />
 					<span><?php _e( 'Autoplay' ); ?></span>
 				</label>
@@ -862,6 +867,17 @@ function wp_print_media_templates() {
 					<input type="checkbox" data-setting="loop" />
 					<span><?php _e( 'Loop' ); ?></span>
 				</label>
+=======
+					<span><?php _e( 'Autoplay' ); ?></span>
+					<input type="checkbox" data-setting="autoplay" />
+				</label>
+
+				<label class="setting checkbox-setting">
+					<span><?php _e( 'Loop' ); ?></span>
+					<input type="checkbox" data-setting="loop" />
+				</label>
+				<div class="clear"></div>
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 			</div>
 		</div>
 	</script>
@@ -944,6 +960,7 @@ function wp_print_media_templates() {
 				</div>
 
 				<label class="setting checkbox-setting">
+<<<<<<< HEAD
 					<input type="checkbox" data-setting="autoplay" />
 					<span><?php _e( 'Autoplay' ); ?></span>
 				</label>
@@ -952,6 +969,17 @@ function wp_print_media_templates() {
 					<input type="checkbox" data-setting="loop" />
 					<span><?php _e( 'Loop' ); ?></span>
 				</label>
+=======
+					<span><?php _e( 'Autoplay' ); ?></span>
+					<input type="checkbox" data-setting="autoplay" />
+				</label>
+
+				<label class="setting checkbox-setting">
+					<span><?php _e( 'Loop' ); ?></span>
+					<input type="checkbox" data-setting="loop" />
+				</label>
+				<div class="clear"></div>
+>>>>>>> c73c2dc843542f127d9ee148b431f1189af805e9
 
 				<label class="setting" data-setting="content">
 					<span><?php _e( 'Tracks (subtitles, captions, descriptions, chapters, or metadata)' ); ?></span>
